@@ -31,7 +31,7 @@ export class CoreapiController {
     }
   }
 
-  @Get()
+  @Get('profile')
   getProfile(): UserDto {
     try {
       return {
@@ -42,7 +42,7 @@ export class CoreapiController {
       throw error;
     }
   }
-  @Get()
+  @Get('modules')
   getModules(): ModuleDto[] {
     try {
       return FAKEMODULES;
